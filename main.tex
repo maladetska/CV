@@ -1,0 +1,225 @@
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{makecell}
+\usepackage[link=off]{phonenumbers}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\usepackage[margin=0.3in]{geometry}
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.0in}
+\addtolength{\evensidemargin}{-0.0in}
+\addtolength{\textwidth}{0in}
+\addtolength{\topmargin}{10pt}
+\addtolength{\textheight}{0.0in}
+
+\urlstyle{same}
+
+\usepackage{xcolor}% http://ctan.org/pkg/xcolor
+\usepackage{hyperref}% http://ctan.org/pkg/hyperref
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue!50!red,
+  linkbordercolor=red,
+  urlcolor=blue!70!black
+}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-10pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
+
+\def \ifempty#1{\def\temp{#1} \ifx\temp\empty }
+
+\newcommand{\resumeItem}[2]{
+  \item\small{
+  	\ifempty{#1}#2\else\textbf{#1}{: #2 \vspace{-2pt}}\fi
+  }
+}
+
+\usepackage[dvipsnames]{xcolor}
+\definecolor{mygray}{gray}{0}
+\usepackage{fancybox}
+
+\usepackage{lmodern}
+\usepackage{tikz}
+
+\tikzset{rndblock/.style={rounded corners,rectangle,draw,outer sep=0pt}}
+
+\newcommand{\tframed}[2][]{\tikz[baseline=(h.base)]\node[rndblock,#1] (h) {\color{black}{#2}};}
+
+\newcommand*{\mystrut}{\rule[-0.2\baselineskip]{0pt}{0.8\baselineskip}}
+\newcommand{\skill}[1]{\tframed[lightgray]{\mystrut#1}}
+
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#3} & \textcolor{mygray}{#2} \\
+      \textit{\small#1} & \textcolor{mygray}{\textit{\small #4}} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeExpSubheading}[5]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1}  & \textcolor{mygray}{#2} \\
+      \textit{\small#3} & \textcolor{mygray}{\textit{\small #4}} \\
+      {\scriptsize#5}
+    \end{tabular*}\vspace{3pt}
+}
+
+\newcommand{\resumeProjSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1}  & \textcolor{mygray}{#2} \\
+      \scriptsize {#3} & \textcolor{mygray}{\textit{\small #4}} \\
+    \end{tabular*}\vspace{3pt}
+}
+
+\newcommand{\resumeProjSubheadingo}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1}  & \textcolor{mygray}{#2} \\
+    \end{tabular*}
+}
+
+\newcommand{\resumeVolunteer}[2]{
+  \item
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+  #1 & \textit{\small #2} \\
+  \end{tabular*}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.2in]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\usepackage{changepage}
+\newcommand{\resumeDesc}[1]{\begin{adjustwidth}{5pt}{0pt}\vspace{-2pt}{\small{#1}}\end{adjustwidth}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\Large Maria Okorochkova} & 197022 St.\hspace{0.5ex}Petersburg, Russia\\
+   Email: \href{mailto:okorochkova02@gmail.com}{okorochkova02@gmail.com} & GitHub: \href{https://www.github.com/maladetska}{maladetska}\\
+   Telegram: \href{https://t.me/maladetska}{@maladetska}\\
+   Mobile: +7(961)624-24-62
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+        {Correspondence School of Physics and Technology of \textbf{MIPT}}{}
+        {Student}{Sep. 2018 - Jun. 2020}{\vspace{5pt}\newline\footnotesize{\textbf{Relevant coursework: }Mathematics, Informatics}}
+        
+    \resumeSubheading
+       {National Research \textbf{ITMO} University}{}
+       {Bachelor of Science in Applied Mathematics and Computer Science}{Sep. 2021 - Jun. 2025}{\vspace{5pt}\newline\footnotesize{\textbf{Relevant coursework: }Algorithms and Data Structures, Discrete Mathematics, Mathematical analysis, Linear algebra}}
+       
+  \resumeSubHeadingListEnd
+
+
+% %-----------EXPERIENCE-----------------
+\vspace{0.005pt}
+\vspace{-1pt}
+\section{Experience}
+  \resumeSubHeadingListStart
+    
+    \resumeExpSubheading
+      {Mentor}{}
+      {\textbf{ITMO University, Information Technologies and Programming Faculty}}{Sep. 2021 - Present}
+      {\skill{Math analysis} \skill{Training} \skill{Teaching}}
+      \resumeDesc{
+      \begin{itemize}
+          \item  Mentor of \textbf{Mathematical analysis} for first-year students.
+      \end{itemize}}
+    
+  \resumeSubHeadingListEnd
+
+\vspace{0.005pt}
+\vspace{-1pt}
+\section{Selected Projects}
+  \resumeSubHeadingListStart
+  \vspace{-1pt}
+    \resumeProjSubheading
+      {\href{https://clck.ru/Z3fGb}{File Archiver}}{}
+      {\skill{C} \skill{ARC} \skill{Huffman} \skill{Data (De)Compression} \skill{(Un)Packing files}}{}
+          \resumeDesc{
+              Development of a program for archiving and unpacking several files into one archive. Data compression and decompression during archiving using the Huffman algorithm.
+          }
+    \resumeProjSubheading
+      {\href{https://clck.ru/Z3fW5}{Rubik's Cube}}{}
+      {\skill{C++} \skill {OOP} \skill {GLUT} \skill {Rubik 's Cube Algorithm}}{}
+          \resumeDesc{
+            Implementation of a program simulating the assembly of a 3x3 Rubik's Cube + using application GUI Implementation (OpenGL Utility Toolkit).
+          }
+    \resumeProjSubheading
+      {\href{https://clck.ru/Z3g75}{Markdown to HTML}}{}
+      {\skill{Java} \skill {OOP} \skill {Converter} \skill {HTML}}{}
+          \resumeDesc{
+            Implementation of the converter from Markdown markup to HTML.
+          }
+  \resumeSubHeadingListEnd
+  
+\vspace{-1pt}
+\section{Achievements}
+\resumeSubHeadingListStart
+        \begin{tabular}{ll}
+        \textbf{Prize-winner}, \quad Mathematical Olympiad `Phystech` held by MIPT (\textbf{2nd prize} among 2000+ finalist) & \quad\quad\quad\quad\quad \textit{\small 2019 - 2020}\\
+        
+        \textbf{Winner},\quad\quad\quad\quad Mathematical Olympiad held by Financial University under the Government & \quad\quad\quad\quad\quad \textit{\small 2019 - 2020} \\ \quad\quad\quad\quad\quad\quad\quad\quad of the Russian Federation (\textbf{top 25} among 580+ finalists) 
+        
+        \end{tabular}
+\resumeSubHeadingListEnd
+
+
+%--------PROGRAMMING SKILLS------------
+\vspace{-1pt}
+\section{Programming Skills}
+ \resumeSubHeadingListStart
+ \begin{tabular}{ll}
+\textbf{Languages:} \quad\quad\quad\quad\quad\quad C++, Java, C, Python. \\
+\textbf{Frameworks \& Tools:} \quad Git, Bash. 
+\end{tabular}
+ \resumeSubHeadingListEnd
+
+%-----------LANGUAGES----------------
+\vspace{-1pt}
+\section{Languages}
+\resumeSubHeadingListStart
+ \begin{tabular}{ll}
+\textbf{Russian}, Native; \\
+\textbf{English}, Upper-Intermediate; \\
+\textbf{French}, Intermediate.
+\end{tabular}
+ \resumeSubHeadingListEnd
+  
+\end{document}
