@@ -1,1 +1,1 @@
-![alt tag](https://github.com/maladetska/CV/blob/master/images/CV.jpg)
+![alt tag](https://github.com/maladetska/CV/blob/master/CV.jpg)
